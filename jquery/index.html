@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no" />
+        <title>Product Landing Page UI Website Design</title>
+        <link rel="stylesheet" href="fonts/fonts-awesome.css">
+        <link rel="stylesheet" href="fonts/google-fonts.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <nav>
+                    <ul>
+                      <li><a href="#" class="active">home</a></li>
+                      <li><a href="#">about</a></li>
+                      <li><a href="#">cart</a></li>
+                      <li><a href="#">order</a></li>
+                      <li><a href="#">login</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="logo"><img src="/home/fidel/Desktop/jquery/aple logo.jpg"alt=""></a>
+            </header>
+            <div class="wrapper">
+                <div class="content">
+                    <h1>app watch series</h1>
+                    <h3>key teatures:</h3>
+                    <ul>
+                        <li>Measure your Blood Oxygen Level</li>
+                        <li>Take an Egg Anytime,Anywhere</li>
+                        <li>The New Sleep App</li>
+                        <li>The Always-on Retina LTPO OLED Display</li>
+                    </ul>
+                    <span class="price" data-text="$55,000/-">$43,000/-</span>
+
+                    <div class="buttons">
+                        <a href="#"><button>buy now</button></a>
+                        <a href="#"><button>add to cart</button></a>
+                    </div>
+                    <div class="icons">
+                        <a href="#" ><img src="/home/fidel/Desktop/jquery/bxl-twitter.svg"></a>
+                        <a href="#" ><img src="/home/fidel/Desktop/jquery/bxl-whatsapp(1).svg"></a>
+                        <a href="#" ><img src=""></a>
+                    </div>
+                </div>
+                <div class="image-container">
+                    <div class="image">
+                        <img src="/home/fidel/Desktop/jquery/appl1.jpg" class="active" alt="">
+                        <img src="/home/fidel/Desktop/jquery/apple3.jpg" alt="">
+                        <img src="/home/fidel/Desktop/jquery/apple4.jpg" alt="">
+                        <img src="/home/fidel/Desktop/jquery/apple5.jpg" alt="">
+                    </div>
+                    <div class="controls">
+                        <div id="left"><img scr="/home/fidel/Desktop/jquery/left.jpg"></div>
+                        <div id="right"><img scr="/home/fidel/Desktop/jquery/right.jpg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            :root{
+                --black:#414141;
+            }
+            *{
+                margin: 0;
+                box-sizing: border-box;
+                font-family: 'Exo 2',sans-serif;
+                text-transform: capitalize;
+                transition: .2s linear;
+            }
+           html {
+            font-size: 62.5%;
+           }  
+           body{
+            overflow-x: hidden;
+           }           
+           .container{
+            height:100vh;
+            width:100vw;
+            background:url(/home/fidel/Desktop/jquery/kali linux.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding:0 10rem;
+           }
+           .container header {
+            width:100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding:2rem 0;
+           }
+           .container header .logo img{
+            height:5rem;
+           }
+           .container header nav ul{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+           }
+           .container header nav ul li{
+            margin-right: 2rem;
+           }
+           .container header nav ul li a{
+            text-decoration:none;
+            color:var(--black);
+            font-size:2rem;
+            padding:0.5rem 2.5rem;
+            border-radius:5rem;
+           }
+           .container header nav ul li .active,
+           .container header nav ul li a:hover{
+            background: var(--black);
+            color: #fff;
+            box-shadow:.1rem .1rem .3rem #333;
+           }
+           .container .wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+            width: 100%;
+            margin-top:-10rem;
+             }
+             .container .wrapper .content{
+                position: relative;
+             }
+             .container .wrapper .content h1{
+                font-size:4rem;
+                font-weight:normal;
+                text-shadow:0.1rem 0.1rem 0.3rem #000;
+                color: #000;
+             }
+             .container .wrapper .content h3{
+                font-size:2rem;
+                color: #333;
+                margin:1rem 0;
+             }
+             .container .wrapper .content ul li{
+                 font-size:1.7rem;
+                 margin-left: 2rem;
+             }
+             .container .wrapper .content .price{
+                font-size:3rem;
+                margin:1.8rem 0;
+                color:var(--black);
+                display:block;
+                position:relative;
+             }
+             .container .wrapper .content .price::after{
+                content:attr(data-text);
+                color:#ff3300;
+                font-size:1.5rem;
+                text-decoration:line-through;
+                position:absolute;
+                top:0;
+                left:15rem;
+             }
+             .container .wrapper .content .buttons{
+                 display:flex;
+                 justify-content:space-between;
+                 width:35rem;
+             }
+             .container .wrapper .content .buttons button{
+                outline: none;
+                border: none;
+                border-radius:5rem;
+                background:var(--black);
+                color:#fff;
+                cursor:pointer;
+                font-weight:bold;
+                height:4rem;
+                width:16rem;
+                box-shadow:.1rem .1rem .3rem #333;
+             }
+             .container .wrapper .content .buttons button:hover{
+                background:#fff;
+                color:#333;
+             }
+             .container .wrapper .content .icons{
+                position:absolute;
+                button:-50%;
+             }
+             .container .wrapper .content .icons a{
+                text-decoration:none;
+                font-size:3rem;
+                color:var(--black);
+                margin:0 1rem;
+                text-shadow: .1rem .1rem .3rem #333;
+             }
+             .container .wrapper .content .icons a:hover{
+                color:#fff;
+             }
+             .container .wrapper .image-container{
+                position:relative;
+                height:50rem;
+                width:50vw;
+             }
+             .container .wrapper .image-container .images img{
+                position:absolute;
+                left:50%;
+                transform:translateX(-50%);
+                filter: drop-shadow(.2rem, .2rem, .3rem var(--black));
+                display:none;
+             }
+             .container .wrapper .image-container .images .active{
+                display: block;
+             }
+             .container .wrapper .image-container .controls{
+                position:absolute;
+                left:50%;
+                transform:translateX(-50%);
+                bottom:-5rem;
+             }
+             #left, #right{
+                color:var(--black);
+                cursor:pointer;
+                font-size:4rem;
+                margin:0 4rem;
+                text-shadow:.1rem .1rem .3rem #333;
+                }
+             
+        </style>
+        <script>
+            $(document).ready(function() {
+              $('nav ul li a').click(function(){
+                 $('nav ul li a').removeClass('active');
+                 $(this).addClass('active');
+              });
+            });
+        </script>
+    </body>
+    </html>
